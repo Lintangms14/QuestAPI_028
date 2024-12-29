@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 @Composable
 fun CostumeTopAppBar(
     title: String,
-    canNavigateBlack: Boolean,
+    canNavigateBack: Boolean,
     modifier: Modifier = Modifier,
     scrollBehavior: TopAppBarScrollBehavior? = null,
     navigateUp: () -> Unit = {},
@@ -33,7 +33,7 @@ fun CostumeTopAppBar(
         },
         modifier = Modifier,
         scrollBehavior = scrollBehavior, navigationIcon = {
-            if(canNavigateBlack){
+            if(canNavigateBack){
                 IconButton(onClick = navigateUp) {
                     Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = null)
                 }
