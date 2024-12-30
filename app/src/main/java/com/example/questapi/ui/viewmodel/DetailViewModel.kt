@@ -11,7 +11,7 @@ import com.example.questapi.Repository.MahasiswaRepository
 import com.example.questapi.model.Mahasiswa
 import com.example.questapi.ui.view.DestinasiDetail
 import kotlinx.coroutines.launch
-import java.io.IOException
+import okio.IOException
 
 sealed class DetailUiState {
     data class Success(val mahasiswa: Mahasiswa) : DetailUiState()
