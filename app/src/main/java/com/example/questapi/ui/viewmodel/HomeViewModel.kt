@@ -9,7 +9,7 @@ import coil.network.HttpException
 import com.example.questapi.Repository.MahasiswaRepository
 import com.example.questapi.model.Mahasiswa
 import kotlinx.coroutines.launch
-import java.io.IOException
+import okio.IOException
 
 sealed class HomeUiState{
     data class Succes(val mahasiswa: List<Mahasiswa>): HomeUiState()
