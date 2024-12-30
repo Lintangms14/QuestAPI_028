@@ -2,7 +2,7 @@ package com.example.questapi.Repository
 
 import com.example.questapi.model.Mahasiswa
 import com.example.questapi.service.MahasiswaService
-import java.io.IOException
+import okio.IOException
 
 interface MahasiswaRepository {
     suspend fun insertMahasiswa(mahasiswa: Mahasiswa)
